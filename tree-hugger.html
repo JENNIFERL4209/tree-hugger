@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Template</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="tree.css">
+</head>
+
+<body>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+        <button class="tablinks" onclick="openCity(event, 'Intro')">Introduction</button>
+        <button class="tablinks" onclick="openCity(event, 'Forest')">Forest</button>
+        <button class="tablinks" onclick="openCity(event, 'Ecosia')">Ecosia</button>
+        <button class="tablinks" onclick="openCity(event, 'Content')">Content</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p></p>
+    </div>
+
+    <div id="intro" class="tabcontent">
+        <h3>Introduction</h3>
+        <p></p>
+    </div>
+
+    <div id="forest" class="tabcontent">
+        <h3>Forest</h3>
+        <p></p>
+    </div>
+    
+    <div id="forest" class="tabcontent">
+        <h3>Forest</h3>
+        <p></p>
+    </div>
+
+    <div id="forest" class="tabcontent">
+        <h3>Forest</h3>
+        <p></p>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                One of three columns
+            </div>
+            <div class="col-sm-4">
+                One of three columns
+            </div>
+            <div class="col-sm-4">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
