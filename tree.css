@@ -33,3 +33,13 @@
     border: 1px solid #ccc;
     border-top: none;
 }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 100px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
