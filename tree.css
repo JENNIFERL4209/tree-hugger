@@ -35,10 +35,10 @@
     font-family: 'Comfortaa', cursive;
 }
 
-.carousel{
-    background: #2f4357;
-    margin-top: 20px;
+h3{
+     text-align: center;
 }
+
 .carousel .item{
     min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
 }
@@ -49,6 +49,3 @@
 	margin: 20px;
 }
 
-#content{
-
-}
