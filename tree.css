@@ -61,3 +61,12 @@ f2{
     height:50%;
 }
 
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron{
+    text-align: center;
+}
