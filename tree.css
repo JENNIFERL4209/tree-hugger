@@ -73,3 +73,13 @@ f2{
         url('images/tree-with-hand.png') no-repeat center;
       background-size: cover;
 }
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron{
+    text-align: center;
+}

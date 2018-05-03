@@ -33,7 +33,7 @@
 
     <!-- Tab Content -->
     <div id="Home" class="tabcontent">
-        <h3>Home</h3>
+        <img src="images/logo.png" alt="logo" id="logo">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
@@ -56,10 +56,10 @@
             <a class="carousel-control left" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-        </div>
+            </div>
         </div>
     </div>
 
@@ -110,7 +110,7 @@
                     your coins to plant a real tree for 2500 coins. It sounds very simple right? Then get started! Just plant some trees and earn some coins. Note: If you use your phone when planting your trees, then your tree will die :(
                 </div>
                 <div class="col-lg-3 col-md-12">
-                    
+
                 </div>
             </div>
         </div>
@@ -118,6 +118,8 @@
 
     <div id="Ecosia" class="tabcontent">
         <h3>Ecosia</h3>
+        <div class="ecosia-images">
+        </div>
             <div class="col-lg-4 col-md-12">
                 <h4>Intro/Purpose</h4>
                     <p>Tired of using Google everyday? Try Ecosia! Ecosia is a search engine that throws 80% of their profit to plan trees. As long as you search through their engine, you will plant a tree instantly </p>
@@ -128,8 +130,6 @@
             <div class="col-lg-4 col-md-12">
                 <!--Image-->
             </div>
-            
-       
     </div>
 
     <div id="FAQ" class="tabcontent">
@@ -162,6 +162,16 @@
 
     <div id="Contact" class="tabcontent">
         <h3>Contact</h3>
+        <div class="jumbotron">
+            <p>Email</p>
+            <li>jenniferl4209@hstat.org</li>
+            <li>jessicac3732@hstat.org</li><br>
+            <p>Github</p>
+            <li>https://github.com/JENNIFERL4209</li>
+            <li>https://github.com/jessicac3732</li>
+
+            <footer>Copyright ©Tree Hugger 2018</footer>
+        </div>
         <p>Email</p>
             <ul>
                 <li>jenniferl4209@hstat.org</li>
@@ -182,7 +192,7 @@
         
     </div>
 
-<script>
+    <script>
         function plantSupport(evt, tree) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
@@ -198,7 +208,7 @@
         }
 
         document.getElementById("defaultOpen").click();
-</script>
+    </script>
 
 </body>
 
