@@ -34,6 +34,33 @@
     <!-- Tab Content -->
     <div id="Home" class="tabcontent">
         <h3>Home</h3>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/tree-with-hand.png" alt="First Slide">
+                </div>
+                <div class="item">
+                    <img src="images/forest.jpg" alt="Second Slide">
+                </div>
+                <div class="item">
+                    <img src="/examples/images/slide3.png" alt="Third Slide">
+                </div>
+            </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        </div>
         <p></p>
     </div>
 
@@ -92,6 +119,7 @@
 
     <div id="Ecosia" class="tabcontent">
         <h3>Ecosia</h3>
+
         <div class="container">
             <h2>Carousel </h2>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -128,6 +156,10 @@
             </a>
             </div>
         </div>
+
+        <div class="ecosia-images">
+
+        </div>
     </div>
 
     <div id="FAQ" class="tabcontent">
@@ -152,12 +184,12 @@
                     <p>4. Why should we plant trees?</p>
                     <li>Planting trees is important because it is what helps us sustain the agriculture that produce a large amount of our fresh food.</li>
                     <li>Agroforestry, a farming technique, is when many trees are grown around or among a group of crops on a piece of land.</li>
-                        <li>This technique allows trees to strengthen crops by making the crop’s soil more fertile. In addition, it allows trees to protect crops by lowering the the effect wind has on crops.</li>
+                    <li>This technique allows trees to strengthen crops by making the crop’s soil more fertile. In addition, it allows trees to protect crops by lowering the the effect wind has on crops.</li>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div id="Contact" class="tabcontent">
         <h3>Contact</h3>
         <p>Email</p>
@@ -183,6 +215,7 @@
             evt.currentTarget.className += " active";
         }
     </script>
+
 </body>
 
 </html>
