@@ -81,6 +81,35 @@ f2{
       font-size:25px;
 }
 
+@media(min-width:992px){
+    #ecosia-logo{
+        width:50%;
+        height:50%;
+    }
+}
+
+@media(min-width:1200px){
+    #ecosia-logo{
+        margin-left:80%;
+        width:150%;
+        height:150%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #Ecosia{
+        background-image:none;
+        color:black;
+      
+    }
+    
+}
+
+@media(max-width: 992px) {
+    .img-rounded-hidden-md-down {
+        display: none;
+    }
+}
 #logo{
     display: block;
     margin-left: auto;
@@ -91,12 +120,17 @@ f2{
     text-align: center;
 }
 
-
-@media screen and (min-width: 992px) {
-    #Ecosia{
-        background-image:none;
-        color:black;
-      
-    }
-    
+#FAQ{
+    color:black;
 }
+
+#q2,#q4{
+    background-color:lightblue;
+}
+
+#q1, #q3{
+    background-color:lightgreen;
+}
+
+
+
