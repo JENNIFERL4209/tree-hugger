@@ -43,13 +43,40 @@ h3{
    text-align: center; 
 }
 
+#Intro{
+    font-size:130%;
+}
+
+#tree-hand{
+    margin-left:10% 
+}
+
+#earth-pic{
+    margin-left:10% 
+}
+
+@media(min-width:1200px){
+    #tree-hand{
+        margin-top: 30%;
+        width:100%;
+        height:100%;
+       
+    }
+    
+    #earth-pic{
+        margin-bottom: 20%;
+        width:120%;
+        height:110%;
+    }
+}
+
 .carousel{
     background: #2f4357;
     margin-top: 20px;
 }
 
 .carousel .item{
-    max-height: 600px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    max-height: 900px; /* Prevent carousel from being distorted if for some reason image doesn't load */
 }
 
 .carousel .item img{
@@ -90,7 +117,7 @@ f2{
 
 @media(min-width:1200px){
     #ecosia-logo{
-        margin-left:80%;
+        margin-left:85%;
         width:150%;
         height:150%;
     }
@@ -100,16 +127,20 @@ f2{
     #Ecosia{
         background-image:none;
         color:black;
-      
     }
+    
     
 }
 
 @media(max-width: 992px) {
     .img-rounded-hidden-md-down {
         display: none;
+    
     }
+    
 }
+
+
 #logo{
     display: block;
     margin-left: auto;
@@ -122,15 +153,20 @@ f2{
 
 #FAQ{
     color:black;
+    height:100%;
+    font-size:20px;
+    background: linear-gradient(
+        rgba(135,206,250,0.9),
+        rgba(152,251,152,0.5)
+    )
+   
 }
 
-#q2,#q4{
-    background-color:lightblue;
+.jumbotron{
+    font-size:150%;
 }
 
-#q1, #q3{
-    background-color:lightgreen;
+footer{
+    font-size:120%;
 }
-
-
 
