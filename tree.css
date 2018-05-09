@@ -46,7 +46,7 @@ h3 {
 }
 
 #Home {
-    height:850px;
+    height:1000px;
     background: linear-gradient( 
     rgba(240, 248, 255, 0.9),
     rgba(135, 206, 250, 2))
@@ -124,7 +124,7 @@ h3 {
     }
     
     #Intro{
-        height:850px;
+        height:1000px;
     }
 }
 
@@ -178,7 +178,7 @@ h3 {
 
     #Forest {
         font-size: 17px;
-        height:835px;
+        height:1000px;
     }
 }
 
@@ -190,7 +190,7 @@ h3 {
     color: white;
     text-align: center;
     font-size: 25px;
-    height:900px;
+    height:100%;
 }
 
 
