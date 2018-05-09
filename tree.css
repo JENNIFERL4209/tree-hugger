@@ -3,8 +3,6 @@
 
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
     
 }
 
@@ -47,6 +45,10 @@ h3 {
     text-align: center;
 }
 
+#slogan{
+    font-size:150%;
+    text-align: center;
+}
 
 #Intro{
     font-size:130%;
@@ -67,13 +69,16 @@ h3 {
         margin-top: 30%;
         width: 100%;
         height: 100%;
+        float:right;
 
     }
 
     #earth {
         margin-bottom: 20%;
-        width: 120%;
-        height: 110%;
+        height: 100%;
+        width:100%;
+        float:left;
+        margin-top:10%;
     }
 }
 
@@ -112,7 +117,8 @@ h3 {
 
 #Forest {
     font-size: 25px;
-    background: linear-gradient( rgba(135, 206, 250, 0.9),
+    background: linear-gradient( 
+    rgba(135, 206, 250, 0.9),
     rgba(152, 251, 152, 0.5))
 }
 
@@ -128,6 +134,10 @@ h3 {
         margin-left: 85%;
         width: 150%;
         height: 150%;
+    }
+    
+    #Ecosia{
+        background-color: #99EFC4
     }
 }
 
@@ -153,11 +163,6 @@ h3 {
     margin-right: auto;
 }
 
-#earth{
-    width:100%;
-    height:100%;
-    float:left;
-}
 
 #Home{
     background: linear-gradient(
@@ -169,8 +174,6 @@ h3 {
 
 #FAQ {
     color: black;
-    height: 100%;
-    width: 100%;
     font-size: 20px;
     background: linear-gradient( rgba(135, 206, 250, 0.9),
     rgba(152, 251, 152, 0.5))
@@ -221,9 +224,6 @@ footer {
     text-align: center;
 }
 
-h4{
-    text-align:center;
-}
 
 #Contact{
    background: linear-gradient( rgba(135, 206, 250, 0.9),
