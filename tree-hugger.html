@@ -18,39 +18,33 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display" rel="stylesheet">
 
     <link rel="stylesheet" href="tree.css">
-    
+
     <script>
         $(document).ready(function() {
-            $(".tablinks").on("click",function(){
-              var tree = $(this).val();
-              $(".tabcontent").each(function(index,value){
-                  $(this).css("display","none");
-              });
-              $(".tablinks").each(function(index,value){
-                  $(this).removeClass("active");
-              });
-              
-              $("#"+tree).css("display","block");
-              
-              $(this).addClass("active");
-              
-            });
-           /* $(".logo-animate").on("click",function() {
-                alert("here");
-                $(".logo-animate").animate(opacity:0.);
-            });
-           */ 
-            $("#defaultOpen").trigger("click");
-        });
-        
+                    $(".tablinks").on("click", function() {
+                        var tree = $(this).val();
+                        $(".tabcontent").each(function(index, value) {
+                            $(this).css("display", "none");
+                        });
+                        $(".tablinks").each(function(index, value) {
+                            $(this).removeClass("active");
+                        });
+
+                        $("#" + tree).css("display", "block");
+
+                        $(this).addClass("active");
+
+                    });
+    $("#defaultOpen").trigger("click");
+    });
     </script>
 </head>
 
 <body>
-    
-    
+
+
     <div class="tab">
-        <button class="tablinks" value="Home"  id="defaultOpen">Home</button>
+        <button class="tablinks" value="Home" id="defaultOpen">Home</button>
         <button class="tablinks" value="Intro">Introduction</button>
         <button class="tablinks" value="Forest">Forest</button>
         <button class="tablinks" value="Ecosia">Ecosia</button>
@@ -60,7 +54,7 @@
 
     <!-- Tab Content -->
     <div id="Home" class="tabcontent">
-        <div class = "logo-animate"><img src="images/logo.png" id="logo"></div>
+        <div class="logo-animate"><img src="images/logo.png" id="logo"></div>
         <p id="slogan">Let’s make a difference in the world by giving back to nature!</p>
         <p></p>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -184,21 +178,25 @@
                     <p>1. How does these companies/organizations earn the money to plant trees?</p>
                     <li>Ecosia is a search engine, so it gains money from search ads. It takes 80% of that profit and gives it away to tree supporting programs.</li>
                     <li>Forest on the other hand, has partnered up with other non-profit organization called <i>Trees for The Future</i>. This non-profit organization collect donations to fund its actions.</li><br>
-                    <img src = "images/Trees-for-Future.png" id = "tree-future">
+                    <img src="images/Trees-for-Future.png" id="tree-future">
                 </div>
-                
+
                 <div class="col-lg-3 col-md-12">
                     <p>2. Where are the trees planted?</p>
                     <li>For Ecosia, this varies and is all based on the data they collect. They do research on where in the world planting trees would be the most beneficial and funding the tree supporting program’s needs to plant trees.</li>
                     <li>Forest, doesn’t decide where the trees are planted, instead they leave that decision to their partner organization <i>Trees for The Future</i>, who mainly focus on planting trees in Africa. </li><br>
-                    
+
                 </div>
                 <div class="col-lg-3 col-md-12">
                     <p>3. Why should we plant trees?</p>
                     <ul>
-                    <li>Planting trees is important because it is what helps us sustain the agriculture that produce a large amount of our fresh food.</li>
-                    <ul><li>Agroforestry, a farming technique, is when many trees are grown around or among a group of crops on a piece of land.</li>
-                    <ul><li>Allowing trees to make crop’s soil more fertile and protect crops by lowering the the effect wind has on crops.</li></ul></ul>
+                        <li>Planting trees is important because it is what helps us sustain the agriculture that produce a large amount of our fresh food.</li>
+                        <ul>
+                            <li>Agroforestry, a farming technique, is when many trees are grown around or among a group of crops on a piece of land.</li>
+                            <ul>
+                                <li>Allowing trees to make crop’s soil more fertile and protect crops by lowering the the effect wind has on crops.</li>
+                            </ul>
+                        </ul>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12">
@@ -208,7 +206,7 @@
                     <br>
                     <br>
                 </div>
-                
+
                 <br>
             </div>
         </div>
@@ -216,17 +214,16 @@
 
     <div id="Contact" class="tabcontent">
         <h1><strong>Contact</strong></h1>
-            <p>Email</p>
-            <li>jenniferl4209@hstat.org</li>
-            <li>jessicac3732@hstat.org</li><br>
-            <p>Github</p>
-            <li>https://github.com/JENNIFERL4209</li>
-            <li>https://github.com/jessicac3732</li>
-            <br><br>
+        <p>Email</p>
+        <li>jenniferl4209@hstat.org</li>
+        <li>jessicac3732@hstat.org</li><br>
+        <p>Github</p>
+        <li>https://github.com/JENNIFERL4209</li>
+        <li>https://github.com/jessicac3732</li>
+        <br><br>
         <footer>Copyright ©Tree Hugger 2018</footer>
     </div>
 
-    
 
 </body>
 
