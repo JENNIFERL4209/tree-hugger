@@ -18,44 +18,71 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display" rel="stylesheet">
 
     <link rel="stylesheet" href="tree.css">
+    
+    <script>
+        $(document).ready(function() {
+            $(".tablinks").on("click",function(){
+              var tree = $(this).val();
+              $(".tabcontent").each(function(index,value){
+                  $(this).css("display","none");
+              });
+              $(".tablinks").each(function(index,value){
+                  $(this).removeClass("active");
+              });
+              
+              $("#"+tree).css("display","block");
+              
+              $(this).addClass("active");
+              
+            });
+           /* $(".logo-animate").on("click",function() {
+                alert("here");
+                $(".logo-animate").animate(opacity:0.);
+            });
+           */ 
+            $("#defaultOpen").trigger("click");
+        });
+        
+    </script>
 </head>
 
 <body>
-
+    
+    
     <div class="tab">
-        <button class="tablinks" onclick="plantSupport(event, 'Home')" id="defaultOpen">Home</button>
-        <button class="tablinks" onclick="plantSupport(event, 'Intro')">Introduction</button>
-        <button class="tablinks" onclick="plantSupport(event, 'Forest')">Forest</button>
-        <button class="tablinks" onclick="plantSupport(event, 'Ecosia')">Ecosia</button>
-        <button class="tablinks" onclick="plantSupport(event, 'FAQ')">FAQ</button>
-        <button class="tablinks" onclick="plantSupport(event, 'Contact')">Contact</button>
+        <button class="tablinks" value="Home"  id="defaultOpen">Home</button>
+        <button class="tablinks" value="Intro">Introduction</button>
+        <button class="tablinks" value="Forest">Forest</button>
+        <button class="tablinks" value="Ecosia">Ecosia</button>
+        <button class="tablinks" value="FAQ">FAQ</button>
+        <button class="tablinks" value="Contact">Contact</button>
     </div>
 
     <!-- Tab Content -->
     <div id="Home" class="tabcontent">
-        <img src="images/logo.png" alt="logo" id="logo">
-        <p id = "slogan">Let’s make a difference in the world by giving back to nature!</p>
+        <div class = "logo-animate"><img src="images/logo.png" id="logo"></div>
+        <p id="slogan">Let’s make a difference in the world by giving back to nature!</p>
         <p></p>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>   
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="images/leaf.jpg" alt="First Slide">
-            </div>
-            <div class="item">
-                <img src="images/forest.jpg" alt="Second Slide">
-            </div>
-            <div class="item">
-                <img src="images/forest2.jpg" alt="Third Slide">
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/leaf.jpg" alt="First Slide">
+                </div>
+                <div class="item">
+                    <img src="images/forest.jpg" alt="Second Slide">
+                </div>
+                <div class="item">
+                    <img src="images/forest2.jpg" alt="Third Slide">
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
                 <a class="carousel-control right" href="#myCarousel" data-slide="next">
@@ -66,7 +93,7 @@
     </div>
 
     <div id="Intro" class="tabcontent">
-        <h3>Introduction</h3>
+        <h1><strong>Introduction</strong></h1>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12">
@@ -85,11 +112,11 @@
                         <li>Eco-friendly apps are effective and efficient. They allow those who don’t have the time to get involved with environmental events, to still get involved without having to physically participate.
                         </li>
                     </ul>
-                    
+
                     <br>
 
                 </div>
-                
+
                 <div class="col-lg-4 col-md-12">
                     <img src="images/earth.png" class="img-rounded-hidden-md-down" width="80%" height="80%" id="earth">
                     <br>
@@ -99,117 +126,107 @@
     </div>
 
     <div id="Forest" class="tabcontent">
-        <h3>Forest</h3>
+        <h1><strong>Forest</strong></h1>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-12"><br>
-                <img src="images/f2.jpg" width="70%" height="70%" id="f2">
+                <div class="col-lg-3 col-md-12"><br>
+                    <img src="images/f2.jpg" id="f2">
                 </div>
-                <div class="col-lg-12 col-md-12">
-                    <h3>Intro/Purpose</h3>
+                <div class="col-lg-3 col-md-12">
+                    <h3><strong>Intro/Purpose</strong></h3>
                     <p>Are you having a hard time focusing? Is it because you are always on your phone? Well, Forest will come to rescue you! Forest is an app that forbids you to use your phone while you are planting a tree. Each time you plant a tree, you
                         will earn coins to plant a real tree on Earth. This is a great way to improve our environment on Earth and of course, FOCUS! </p>
                 </div>
-                <div class="col-lg-12 col-md-12">
-                    <h3>How-To</h3>
-                    <p>Forest allows you to plant trees from 10 minute to 120 minute. During this duration, you may earn 3 to 43 coins. You can plant different kinds of trees based on your preference of tree species. You need to buy the trees first! :) </p><br><br> <p>You may also save up
-                    your coins to plant a real tree for 2500 coins. It sounds very simple right? Then get started! Just plant some trees and earn some coins. Note: If you use your phone when planting your trees, then your tree will die :(</p>
+                <div class="col-lg-3 col-md-12">
+                    <h3><strong>How-To</strong></h3>
+                    <p>Forest allows you to plant trees from 10 minute to 120 minute. During this duration, you may earn 3 to 43 coins. You can plant different kinds of trees based on your preference of tree species. You need to buy the trees first! :) You
+                        may also save up your coins to plant a real tree for 2500 coins. It sounds very simple right? Then get started! Just plant some trees and earn some coins. Note: If you use your phone when planting your trees, then your tree will
+                        die :(</p>
                 </div>
-                <div class="col-lg-2 col-md-3">
-                    <img src="images/f3.jpg" width="70%" height="70%" id="f3">
+                <div class="col-lg-3 col-md-12">
+                    <img src="images/f3.jpg" id="f3">
                 </div>
             </div>
         </div>
     </div>
 
     <div id="Ecosia" class="tabcontent">
-        <div class = "container">
-            <div class = "row">
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-4 col-md-12">
                     <br>
                     <img src="images/Ecosia.png" class="img-rounded-hidden-md-down" width="100%" height="100%" id="ecosia-logo">
                 </div>
                 <div class="col-lg-12 col-md-12">
-                    <h3>Intro/Purpose</h3>
-                        <p>Tired of using Google everyday? Try Ecosia! Ecosia is a search engine that throws 80% of their profit to plant trees. As long as you search through their search engine, you will be able to plant  trees. </p>
-                        <br>
+                    <h3><strong>Intro/Purpose</strong></h3>
+                    <p>Tired of using Google everyday? Try Ecosia! Ecosia is a search engine that throws 80% of their profit to plant trees. As long as you search through their search engine, you will be able to plant trees. </p>
+                    <br>
                 </div>
                 <div class="col-lg-12 col-md-12">
-                    <h3>How-To</h3>
-                        <p>Ecosia can be added as an extension on your browser as search engine. By doing so, you will be able to search things on their engine. However, if you are not… a computer person, then you can use their app! The app basically functions the same on the computer. On average, you need around 45 searches to plant a tree. So, start exploring your curiosity and plant trees!</p>
-                        <br>
+                    <h3><strong>How-To</strong></h3>
+                    <p>Ecosia can be added as an extension on your browser as search engine. By doing so, you will be able to search things on their engine. However, if you are not… a computer person, then you can use their app! The app basically functions
+                        the same on the computer. On average, you need around 45 searches to plant a tree. So, start exploring your curiosity and plant trees!</p>
+                    <br>
                 </div>
                 <div class="col-lg-12 col-md-12">
-                    <img src = "images/ecosia-search.png" width = "100%" class="img-rounded-hidden-md-down">
+                    <img src="images/ecosia-search.png" width="100%" class="img-rounded-hidden-md-down">
                 </div>
             </div>
         </div>
     </div>
 
     <div id="FAQ" class="tabcontent">
-        <h3>FAQ</h3>
+        <h1><strong>FAQ</strong></h1>
         <br>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-12"  >
+                <div class="col-lg-3 col-md-12">
                     <p>1. How does these companies/organizations earn the money to plant trees?</p>
                     <li>Ecosia is a search engine, so it gains money from search ads. It takes 80% of that profit and gives it away to tree supporting programs.</li>
-                    <li>Forest on the other hand, has partnered up with other non-profit organization called Trees for The Future. This non-profit organization collect donations to fund its actions.</li><br>
+                    <li>Forest on the other hand, has partnered up with other non-profit organization called <i>Trees for The Future</i>. This non-profit organization collect donations to fund its actions.</li><br>
+                    <img src = "images/Trees-for-Future.png" id = "tree-future">
                 </div>
-                <div class="col-lg-3 col-md-12" >
+                
+                <div class="col-lg-3 col-md-12">
                     <p>2. Where are the trees planted?</p>
                     <li>For Ecosia, this varies and is all based on the data they collect. They do research on where in the world planting trees would be the most beneficial and funding the tree supporting program’s needs to plant trees.</li>
-                    <li>Forest, doesn’t decide where the trees are planted, instead they leave that decision to Tree for The Future, who mainly focus on Africa. </li><br>
+                    <li>Forest, doesn’t decide where the trees are planted, instead they leave that decision to their partner organization <i>Trees for The Future</i>, who mainly focus on planting trees in Africa. </li><br>
+                    
                 </div>
-                <div class="col-lg-3 col-md-12"  >
-                    <p>3. How does planting trees impact you positively?</p>
+                <div class="col-lg-3 col-md-12">
+                    <p>3. Why should we plant trees?</p>
+                    <ul>
+                    <li>Planting trees is important because it is what helps us sustain the agriculture that produce a large amount of our fresh food.</li>
+                    <ul><li>Agroforestry, a farming technique, is when many trees are grown around or among a group of crops on a piece of land.</li>
+                    <ul><li>Allowing trees to make crop’s soil more fertile and protect crops by lowering the the effect wind has on crops.</li></ul></ul>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <p>4. How does planting trees impact you positively?</p>
                     <li>Trees are beneficial to you because they provide you with oxygen that you breathe in everyday. </li>
                     <li>In addition, with the pollution in today’s world, trees are a great way to clean the air, giving you fresher and cleaner air.</li>
                     <br>
                     <br>
                 </div>
-                <div class="col-lg-3 col-md-12" >
-                    <p>4. Why should we plant trees?</p>
-                    <li>Planting trees is important because it is what helps us sustain the agriculture that produce a large amount of our fresh food.</li>
-                    <li>Agroforestry, a farming technique, is when many trees are grown around or among a group of crops on a piece of land.</li>
-                    <li>This technique allows trees to strengthen crops by making the crop’s soil more fertile. In addition, it allows trees to protect crops by lowering the the effect wind has on crops.</li>
-                </div>
+                
                 <br>
             </div>
         </div>
     </div>
 
     <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
-        <div class="jumbotron">
+        <h1><strong>Contact</strong></h1>
             <p>Email</p>
             <li>jenniferl4209@hstat.org</li>
             <li>jessicac3732@hstat.org</li><br>
             <p>Github</p>
             <li>https://github.com/JENNIFERL4209</li>
             <li>https://github.com/jessicac3732</li>
-<br><br>
-        </div>
+            <br><br>
         <footer>Copyright ©Tree Hugger 2018</footer>
     </div>
 
-    <script>
-        function plantSupport(evt, tree) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace("active", "");
-            }
-            document.getElementById(tree).style.display = "block";
-            evt.currentTarget.className += "active";
-        }
-
-        document.getElementById("defaultOpen").click();
-    </script>
+    
 
 </body>
 
