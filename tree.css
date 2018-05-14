@@ -286,19 +286,13 @@ footer {
     margin-left: 30%;
 }
 
-#tree-future:hover{
-    width:110%;
-    height:150%;
-}
-
 
 @media(min-width:1200px) {
     #tree-future {
-        margin-left: 0;
-
+        margin-left: 0%;
+        
     }
 }
-
 
 #Contact {
     text-align: center;
